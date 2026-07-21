@@ -1,4 +1,4 @@
-# Personal Gentoo overlay.
+# Personal Gentoo overlay
 
 ## Packages
 
