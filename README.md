@@ -1,4 +1,6 @@
-# Personal Gentoo overlay
+# darllowin_overlay
+
+Personal Gentoo overlay.
 
 ## Packages
 
@@ -8,28 +10,28 @@
 
 ## Setup
 
-### Eselect (recommended)
+### eselect (recommended)
 
 ```sh
-eselect repository add darllowin git https://github.com/Darllowin/darllowin-overlay.git
-emaint sync -r darllowin
+eselect repository add darllowin_overlay git https://github.com/Darllowin/darllowin-overlay.git
+emaint sync -r darllowin_overlay
 ```
 
 ### Manual
 
 ```sh
-cat > /etc/portage/repos.conf/darllowin.conf <<EOF
-[darllowin]
-location = /var/db/repos/darllowin
+cat > /etc/portage/repos.conf/darllowin_overlay.conf <<EOF
+[darllowin_overlay]
+location = /var/db/repos/darllowin_overlay
 sync-type = git
 sync-uri = https://github.com/Darllowin/darllowin-overlay.git
 auto-sync = yes
 EOF
-emerge --sync darllowin
+emaint sync -r darllowin_overlay
 ```
 
 ## Install packages
 
 ```sh
-emerge --ask media-gfx/lightningview::darllowin
+emerge --ask media-gfx/lightningview::darllowin_overlay
 ```
