@@ -8,7 +8,7 @@
 
 ## Setup
 
-### eselect (recommended)
+### Eselect (recommended)
 
 ```sh
 eselect repository add darllowin git https://github.com/Darllowin/darllowin-overlay.git
