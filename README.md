@@ -14,7 +14,7 @@ Personal Gentoo overlay.
 
 ```sh
 eselect repository add darllowin git https://github.com/Darllowin/darllowin-overlay.git
-emerge --sync darllowin
+emaint sync -r darllowin
 ```
 
 ### Manual
