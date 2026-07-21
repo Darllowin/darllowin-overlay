@@ -33,5 +33,5 @@ emerge --sync darllowin
 ## Install packages
 
 ```sh
-emerge -av media-gfx/lightningview::darllowin
+emerge --ask media-gfx/lightningview::darllowin
 ```
