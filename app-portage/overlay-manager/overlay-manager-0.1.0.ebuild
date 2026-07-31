@@ -12,7 +12,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 RESTRICT="network-sandbox"
 
-DEPEND=">=dev-lang/rust-1.95"
+DEPEND=">=dev-lang/rust-bin-1.95"
 RDEPEND="${DEPEND}
 	sys-apps/portage"
 
