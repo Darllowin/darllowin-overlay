@@ -4,7 +4,7 @@
 EAPI=8
 
 DESCRIPTION="TUI application for managing Gentoo Portage overlays"
-HOMEPAGE="https://github.com/Darllowin/overlay-manager"
+HOMEPAGE="https://github.com/Darllowin/Overlay-manager"
 SRC_URI="https://github.com/Darllowin/Overlay-manager/archive/refs/heads/master.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
@@ -12,7 +12,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 RESTRICT="network-sandbox"
 
-DEPEND=">=dev-lang/rust-bin-1.95"
+DEPEND=">=dev-lang/rust-1.95"
 RDEPEND="${DEPEND}
 	sys-apps/portage"
 
