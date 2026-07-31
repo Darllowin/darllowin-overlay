@@ -7,6 +7,7 @@ Personal Gentoo overlay.
 | Package | Description |
 |---------|-------------|
 | `media-gfx/lightningview` | Lightning-fast cross-platform image viewer and video player |
+| `app-portage/overlay-manager` | TUI overlay manager for Gentoo Linux |
 
 ## Setup
 
