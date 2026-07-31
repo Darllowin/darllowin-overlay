@@ -10,6 +10,7 @@ SRC_URI="https://github.com/Darllowin/Overlay-manager/archive/refs/heads/master.
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
+RESTRICT="network-sandbox"
 
 DEPEND=">=dev-lang/rust-bin-1.95"
 RDEPEND="${DEPEND}
