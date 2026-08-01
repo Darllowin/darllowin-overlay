@@ -5,7 +5,7 @@ EAPI=8
 
 DESCRIPTION="TUI application for managing Gentoo Portage overlays"
 HOMEPAGE="https://github.com/Darllowin/Overlay-manager"
-SRC_URI="https://github.com/Darllowin/Overlay-manager/archive/refs/heads/master.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/Darllowin/Overlay-manager/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -16,7 +16,7 @@ DEPEND=">=dev-lang/rust-bin-1.95"
 RDEPEND="${DEPEND}
 	sys-apps/portage"
 
-S="${WORKDIR}/Overlay-manager-master"
+S="${WORKDIR}/Overlay-manager-${PV}"
 
 src_compile() {
 	cargo build --release
