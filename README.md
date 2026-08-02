@@ -30,9 +30,3 @@ auto-sync = yes
 EOF
 emaint sync -r darllowin_overlay
 ```
-
-## Install packages
-
-```sh
-emerge --ask media-gfx/lightningview::darllowin_overlay
-```
