@@ -12,7 +12,6 @@ SRC_URI="https://altlinux.space/api/v1/repos/rirusha/Cassette/archive/v${PV}.tar
 LICENSE="GPL-3.0-or-later"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+webkit"
 
 RDEPEND="
 	dev-db/sqlite:3
@@ -24,8 +23,8 @@ RDEPEND="
 	gui-libs/libadwaita:1
 	media-libs/gstreamer:1.0
 	net-libs/libsoup:3.0[ssl]
+	net-libs/webkit-gtk:6
 	x11-libs/gdk-pixbuf:2
-	webkit? ( net-libs/webkit-gtk:6 )
 "
 DEPEND="${RDEPEND}"
 BDEPEND="
@@ -45,7 +44,7 @@ pkg_setup() {
 src_configure() {
 	local emesonargs=(
 		-Dis_devel=false
-		-Dwith_webkit="$(usex webkit true false)"
+		-Dwith_webkit=true
 	)
 	meson_src_configure
 }

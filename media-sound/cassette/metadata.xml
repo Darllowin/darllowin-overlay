@@ -8,7 +8,4 @@
 	<upstream>
 		<bugs-to>https://altlinux.space/rirusha/Cassette/issues</bugs-to>
 	</upstream>
-	<use>
-		<flag name="webkit">Use WebKitGTK for Yandex OAuth (needed for login)</flag>
-	</use>
 </pkgmetadata>
