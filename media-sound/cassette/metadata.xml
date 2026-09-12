@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>mr.shurpatov@gmail.com</email>
+		<name>Darllowin</name>
+	</maintainer>
+	<upstream>
+		<bugs-to>https://altlinux.space/rirusha/Cassette/issues</bugs-to>
+	</upstream>
+	<use>
+		<flag name="webkit">Use WebKitGTK for Yandex OAuth (needed for login)</flag>
+	</use>
+</pkgmetadata>
