@@ -1,7 +1,5 @@
 # darllowin_overlay
 
-Personal Gentoo overlay.
-
 ## Packages
 
 | Package | Description |
