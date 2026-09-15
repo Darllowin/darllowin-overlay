@@ -1,13 +1,11 @@
-```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
     <maintainer type="person">
         <name>Darllowin</name>
-        <email>mr.shurpatov@gmail.com</email>
+        <email>mr.shurpatov@gmail.com.com</email>
     </maintainer>
     <upstream>
-        <remote-id type="github">KUKURUZKA165/materialgram</remote-id>
+        <remote-id type="github">Vysp3r/ProtonPlus</remote-id>
     </upstream>
 </pkgmetadata>
-```
