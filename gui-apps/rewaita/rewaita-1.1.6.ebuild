@@ -21,7 +21,7 @@ RDEPEND="
     dev-python/numpy
     dev-python/fortune-python
     gui-libs/libadwaita:=
-    gui-libs/libportal:=
+    dev-libs/libportal:=
     dev-python/pygobject
 "
 
