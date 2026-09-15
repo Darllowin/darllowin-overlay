@@ -1,6 +1,6 @@
 EAPI=8
 
-inherit meson
+inherit gnome2-utils meson
 
 DESCRIPTION="A modern compatibility tools manager for Linux"
 HOMEPAGE="https://github.com/Vysp3r/ProtonPlus"
@@ -35,3 +35,13 @@ BDEPEND="
     sys-devel/gettext
     virtual/pkgconfig
 "
+
+pkg_postinst() {
+    gnome2_schemas_update
+    xdg_pkg_postinst
+}
+
+pkg_postrm() {
+    gnome2_schemas_update
+    xdg_pkg_postrm
+}
