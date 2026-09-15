@@ -6,6 +6,7 @@
         <email>mr.shurpatov@gmail.com</email>
     </maintainer>
     <upstream>
-        <remote-id type="github">KUKURUZKA165/materialgram</remote-id>
+        <remote-id type="codeberg">jamesansley/fortune</remote-id>
+        <remote-id type="pypi">fortune-python</remote-id>
     </upstream>
 </pkgmetadata>
