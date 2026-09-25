@@ -14,6 +14,6 @@
 ## Setup
 
 ```sh
-eselect repository add darllowin_overlay git https://github.com/Darllowin/darllowin-overlay.git
+eselect repository eselect repository enable darllowin_overlay
 emaint sync -r darllowin_overlay
 ```
