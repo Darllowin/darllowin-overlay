@@ -11,6 +11,7 @@
 | `games-util/protonplus` | A modern compatibility tools manager for Linux |
 | `dev-python/fortune-python` | A Fortune clone in Python |
 | `gui-apps/rewaita` | GTK4 application for customizing Adwaita themes |
+| `gui-apps/spiral` | A GTK4 file manager with a file chooser portal backend |
 ## Setup
 
 ```sh
