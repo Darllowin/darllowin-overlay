@@ -23,6 +23,8 @@ CRATES="
 	cfg-if@1.0.4
 	concurrent-queue@2.5.0
 	crossbeam-utils@0.8.22
+	dlib@0.5.3
+	downcast-rs@1.2.1
 	either@1.18.0
 	endi@1.1.1
 	enumflags2@0.7.12
@@ -52,7 +54,11 @@ CRATES="
 	gettext-rs@0.8.0
 	gettext-sys@0.26.0
 	gio-sys@0.22.9
+	gio-unix-sys@0.22.9
+	gio-unix@0.22.8
 	gio@0.22.10
+	gl@0.14.0
+	gl_generator@0.14.0
 	glib-build-tools@0.22.8
 	glib-macros@0.22.9
 	glib-sys@0.22.9
@@ -76,6 +82,8 @@ CRATES="
 	gstreamer-video-sys@0.25.4
 	gstreamer-video@0.25.4
 	gstreamer@0.25.4
+	gtk4-layer-shell-sys@0.6.1
+	gtk4-layer-shell@0.8.1
 	gtk4-macros@0.11.5
 	gtk4-sys@0.11.5
 	gtk4@0.11.5
@@ -86,15 +94,18 @@ CRATES="
 	itertools@0.15.0
 	js-sys@0.3.105
 	kamadak-exif@0.6.1
+	khronos_api@3.1.0
 	kstring@2.0.2
 	lazy_static@1.5.0
 	libadwaita-sys@0.9.2
 	libadwaita@0.9.2
-	libc@0.2.189
+	libc@0.2.190
+	libloading@0.8.9
 	libseccomp-sys@0.3.0
 	libseccomp@0.4.0
 	linux-raw-sys@0.12.1
 	locale_config@0.3.0
+	log@0.4.34
 	malloc_buf@0.0.6
 	memchr@2.8.3
 	memoffset@0.9.1
@@ -119,6 +130,7 @@ CRATES="
 	pkg-config@0.3.34
 	proc-macro-crate@3.5.0
 	proc-macro2@1.0.107
+	quick-xml@0.41.0
 	quote@1.0.47
 	r-efi@6.0.0
 	regex-automata@0.4.18
@@ -127,6 +139,7 @@ CRATES="
 	rustc_version@0.4.1
 	rustix@1.1.4
 	rustversion@1.0.23
+	scoped-tls@1.0.1
 	semver@1.0.28
 	serde@1.0.229
 	serde_core@1.0.229
@@ -144,13 +157,14 @@ CRATES="
 	syn@2.0.119
 	syn@3.0.5
 	system-deps@7.0.8
+	system-deps@8.0.0
 	system-deps@9.0.0
 	target-lexicon@0.13.5
 	temp-dir@0.1.16
 	tempfile@3.27.0
 	thiserror-impl@2.0.20
 	thiserror@2.0.20
-	tokio@1.53.1
+	tokio@1.53.2
 	toml@1.1.5+spec-1.1.0
 	toml_datetime@1.1.1+spec-1.1.0
 	toml_edit@0.25.13+spec-1.1.0
@@ -168,12 +182,18 @@ CRATES="
 	wasm-bindgen-macro@0.2.128
 	wasm-bindgen-shared@0.2.128
 	wasm-bindgen@0.2.128
+	wayland-backend@0.3.17
+	wayland-client@0.31.15
+	wayland-protocols@0.32.13
+	wayland-scanner@0.31.11
+	wayland-sys@0.31.11
 	winapi-i686-pc-windows-gnu@0.4.0
 	winapi-x86_64-pc-windows-gnu@0.4.0
 	winapi@0.3.9
 	windows-link@0.2.1
 	windows-sys@0.61.2
 	winnow@1.0.4
+	xml-rs@0.8.29
 	zbus@5.19.0
 	zbus_macros@5.19.0
 	zbus_names@4.3.4
@@ -194,9 +214,7 @@ SRC_URI="
 "
 
 LICENSE="GPL-3+"
-LICENSE+="
-	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 MIT Unicode-3.0
-"
+LICENSE+=" Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 ISC MIT Unicode-3.0"
 
 SLOT="0"
 KEYWORDS="~amd64"
@@ -205,15 +223,14 @@ RDEPEND="
 	>=gui-libs/gtk-4.22.0:4
 	>=gui-libs/libadwaita-1.9.0:=
 	gui-libs/gtksourceview:5
+	>=gui-libs/gtk4-layer-shell-1.3.0
+	dev-libs/wayland
 	media-libs/gstreamer:1.0
 	media-libs/gst-plugins-base:1.0
 	media-plugins/gst-plugin-gtk4:1.0
 	sys-apps/bubblewrap
-	sys-libs/libseccomp
-"
-
-RDEPEND+="
 	sys-apps/xdg-desktop-portal
+	sys-libs/libseccomp
 "
 
 DEPEND="${RDEPEND}"
